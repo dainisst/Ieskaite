@@ -1,0 +1,30 @@
+h1{
+  color: red;
+  font-size: 25pt;
+  text-align: center;
+}
+p{
+  background: #c9c9f3;
+  padding: 10px;
+  margin: 15px;
+  border-style: solid;
+  border-color: blue;
+}
+.img{
+  display: flex; 
+  justify-content: center; 
+}
+img{
+  width: 300px;  
+}
+nav{
+  display: flex; 
+  justify-content: center; 
+}
+a{
+  text-decoration: none;
+  background: #9ce49c;
+  padding: 10px;
+  margin: 10px;
+
+}
