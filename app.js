@@ -2,44 +2,13 @@ function myFunction() {
   document.getElementById("outputContainer").innerHTML = `<div>Šis teksts ir ievietots ar JS</div>`;
 }
 
-// $(document).ready(function(){ //dialogs nestrādā
-//   $(function() {
-//     $("#dialog").dialog({
-//       autoOpen: false,
-//       show: {
-//         effect: "blind",
-//         duration: 1000
-//       },
-//       hide: {
-//         effect: "explode",
-//         duration: 1000
-//       }
-//     });
-//     $("#dialog").click(function(){
-//       $("#dialog").dialog("open")
-//     });
-//   });
-// });
-
-$(document).ready(function(){ //dialogs nestrādā
-  $( function() {
-    $( "#dialog" ).dialog({
-      autoOpen: false,
-      show: {
-        effect: "blind",
-        duration: 1000
-      },
-      hide: {
-        effect: "explode",
-        duration: 1000
-      }
-    });
- 
-    $( "#opener" ).on( "click", function() {
-      $( "#dialog" ).dialog( "open" );
-    });
-  } );
+$(document).ready(function(){ 
+  $('p').click(function(){
+    $(this).dialog();
+  })
 });
+
+
 
 
 // 5. Pievienot JS kodu:
