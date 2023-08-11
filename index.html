@@ -12,7 +12,9 @@
 </head>
 <body onload="myFunction()">
   <h1>JS patstāvīgais uzdevums</h1>
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat odit officia, nobis iste nostrum ab quod iure aut explicabo quia! Perspiciatis voluptatum error nisi rem quisquam fuga neque voluptates commodi.</p>
+  <div id="dialog">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat odit officia, nobis iste nostrum ab quod iure aut explicabo quia! Perspiciatis voluptatum error nisi rem quisquam fuga neque voluptates commodi.</p>
+  </div> 
   <div class="img">
     <img src="13-2500x1667.jpg" alt="">
   </div>
@@ -41,9 +43,11 @@
     <button id="sumbitBtn">Iesniegt</button>
   </form>
   <h2>Datu izvade</h2>
-  <div id="outputContainer">
-    
-  </div>
+  <div id="dialog" title="Basic dialog">
+  <p>This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the &apos;x&apos; icon.</p>
+</div>
+ 
+<button id="opener">Open Dialog</button>
 
   <script src="app.js"></script>
 </body>
