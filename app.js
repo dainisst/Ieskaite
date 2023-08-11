@@ -8,17 +8,30 @@ $(document).ready(function(){
   })
 });
 
-
-
-
-// 5. Pievienot JS kodu:
-
-// 5.1. Izmantojot JS ievietot dokumentā jaunu DIV elementu un ievietot tajā tekstu:
-
-// "Šis teksts ir ievietots ar JS";
-
-// 5.2. Izmantojot JS visiem rindkopas elementiem pievienot "click" notikumu, pēc kura tiek izvadīts Dialoglodziņš ar šīs rindkopas saturu. 
-
-// 5.3. Formai veikt lauku ievades pārbaudi, lai katrā laukā varētu ievadīt ne mazāk kā 3 simbolus (izvadīt paziņojumu)
-
-// 5.4. Ja formā nav kļūdu, Izmantjot metodi form.submit() nosūtīt formas datus" https://www.formbackend.com/ vietnē 
+form = document.querySelector("form");
+        form.onsubmit = function(event){
+            formErrors = "";
+            
+            if(document.querySelector('ul')){
+                document.querySelector('ul').remove();
+            }
+            event.preventDefault();
+           if(form[0].value.length<3){
+                formErrors +="<li>Vārdam jabūt garākam par 3 simboliem</li>"
+           } 
+           if(form[1].value.length<3){
+                formErrors +="<li>Uzvārdam jabūt garākam par 3 simboliem</li>"
+           } 
+           if(form[2].value.length<10){
+                formErrors +="<li>Ziņojumam jābūt garākam par 10 simboliem</li>"
+           }
+          
+           form.innerHTML += `
+            <ul>
+                ${formErrors}
+            </ul>    
+           `;
+           if(!formErrors){
+            form.submit();
+           }
+        }

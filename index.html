@@ -5,11 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ieskaite</title>
   <link rel="stylesheet" href="style.css">  
-
   <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
-
-  
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>  
 </head>
 <body onload="myFunction()">
   <h1>JS patstāvīgais uzdevums</h1>
@@ -33,20 +30,23 @@
     <table>
       <tr>
         <td><label >Vārds</label></td>
-        <td><input type="text" name="firstName"></td>
+        <td><input type="text" name="firstName" id="firstName"></td>
       </tr>
       <tr>
         <td><label >Uzvārds</label></td>
-        <td><input type="text" name="lastName"></td>
+        <td><input type="text" name="lastName" id="lastName"></td>
       </tr>
       <tr>
         <td><label >Ziņojums</label></td>
         <td><textarea name="message" id="message" cols="30" rows="5"></textarea></td>
       </tr>
     </table><br>   
-    <button id="sumbitBtn">Iesniegt</button>
+    <input type="submit" value="Iesniegt">
   </form>
-  <h2>Datu izvade</h2>  
+  <h2>Teksta izvade</h2>  
+  <div id="outputContainer">
+
+  </div>
 
   <script src="app.js"></script>
 </body>
