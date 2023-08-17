@@ -8,8 +8,7 @@ $(document).ready(function(){
   }) 
   
   $('a').click(function(){
-    $(this).append('<img src="https://picsum.photos/200/300"/><br/>').append($(this).html());
-    $(this).dialog();
+    $(this).dialog().append('<img src="https://picsum.photos/200/300"/>');
   })
 
 });
