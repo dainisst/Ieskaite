@@ -10,6 +10,11 @@
 </head>
 <body onload="myFunction()">
   <h1>JS patstāvīgais uzdevums</h1>
+  <nav>
+    <a href="#" target="blank">Pirmais attēls</a>
+    <a href="https://picsum.photos/200/300" target="blank">Otrais attēls</a>
+    <a href="https://picsum.photos/200/300" target="blank">Trešais attēls</a>
+  </nav><br>
   <div id="dialog">
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat odit officia, nobis iste nostrum ab quod iure aut explicabo quia! Perspiciatis voluptatum error nisi rem quisquam fuga neque voluptates commodi.</p>
   </div>
@@ -19,12 +24,7 @@
   <div class="img">
     <img src="13-2500x1667.jpg" alt="">
   </div>
-  <br>
-  <nav>
-    <a href="https://picsum.photos/200/300">Pirmais attēls</a>
-    <a href="https://picsum.photos/200/300">Otrais attēls</a>
-    <a href="https://picsum.photos/200/300">Trešais attēls</a>
-  </nav><br>
+  <br> 
   <h2>Datu ievade</h2>
   <form name="myForm" action="">
     <table>
@@ -38,10 +38,10 @@
       </tr>
       <tr>
         <td><label >Ziņojums</label></td>
-        <td><textarea name="message" id="message" cols="30" rows="5"></textarea></td>
+        <td><textarea name="message" id="message" cols="25" rows="5"></textarea></td>
       </tr>
     </table><br>   
-    <input type="submit" value="Iesniegt">
+    <input type="submit" value="Iesniegt" id="submit">
   </form>
   <h2>Teksta izvade</h2>  
   <div id="outputContainer">

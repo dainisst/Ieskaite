@@ -5,8 +5,15 @@ function myFunction() {
 $(document).ready(function(){ 
   $('p').click(function(){
     $(this).dialog();
+  }) 
+  
+  $('a').click(function(){
+    $(this).append('<img src="https://picsum.photos/200/300"/><br/>').append($(this).html());
+    $(this).dialog();
   })
+
 });
+
 
 form = document.querySelector("form");
         form.onsubmit = function(event){

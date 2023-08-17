@@ -1,3 +1,6 @@
+body{
+  background-image: url("texture.jpg"); 
+}
 h1{
   color: red;
   font-size: 25pt;
@@ -26,5 +29,16 @@ a{
   background: #9ce49c;
   padding: 10px;
   margin: 10px;
-
+}
+input{
+  width: 198px;
+}
+#submit{
+  width: auto;
+  height: 30px;
+  background: #9595e9;
+  border-radius: 7px;
+}
+label{
+  font-weight: bold;
 }
